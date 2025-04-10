@@ -1,7 +1,7 @@
 
 import React from 'react'
-import ThemeToggle from './themeToggle'
 import LanguageToggle from '../i18n/LanguageToggle'
+import ThemeToggle from './ThemeToggle'
 
 
 const ThemeSettings: React.FC = () => {
