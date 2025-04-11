@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="py-16 md:py-36 container mx-auto lg:max-w-4xl md:max-w-2xl">
       <div className="max-w-xl">
         <div className="flex gap-4 mb-4">
-          <img className="rounded-full shadow-lg w-25 h-25" src="/src/assets/yo-avatar.png" alt="Bastián Gallegos" />
+          <img className="rounded-full shadow-lg w-25 h-25" src="/yo-avatar.png" alt="Bastián Gallegos" />
           <a
             href="https://linkedin.com/in/bastian-andres-gallegos-sepulveda"
             target="_blank"
