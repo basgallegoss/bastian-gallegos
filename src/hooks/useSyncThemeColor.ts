@@ -9,8 +9,8 @@ export const useSyncThemeColor = () => {
     const meta = document.querySelector('meta[name="theme-color"]')
     if (!meta) return
 
-    const light = '#f9fafb'
-    const dark = '#030712'
+    const light = '#d9d8ff'
+    const dark = '#1b1b3a'
 
     meta.setAttribute('content', theme === 'dark' ? dark : light)
   }, [theme])
