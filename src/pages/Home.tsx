@@ -1,9 +1,12 @@
 
 import ThemeSettings from '@/components/theme/ThemeSettings'
 import Hero from '@/components/hero'
+import { useSyncThemeColor } from '@/hooks/useSyncThemeColor'
 
 
 function Home() {
+  useSyncThemeColor()
+
   return (
     <>
       <header className="fixed top-4 right-4 md:right-20 lg:right-40 z-50">

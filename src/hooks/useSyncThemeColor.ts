@@ -1,0 +1,17 @@
+import { useEffect } from 'react'
+import { useSelector } from 'react-redux'
+import { RootState } from '@/store'
+
+export const useSyncThemeColor = () => {
+  const theme = useSelector((state: RootState) => state.theme.mode)
+
+  useEffect(() => {
+    const meta = document.querySelector('meta[name="theme-color"]')
+    if (!meta) return
+
+    const light = '#f9fafb'
+    const dark = '#030712'
+
+    meta.setAttribute('content', theme === 'dark' ? dark : light)
+  }, [theme])
+}
